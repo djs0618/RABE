@@ -9,7 +9,7 @@ from FABEO import FABECPABE
 import math
 import hashlib
 
-
+1
 class BinaryTree:
     """二叉树结构管理类，用于用户身份和时间管理（基于KUNode逻辑优化最小覆盖集）"""
 
