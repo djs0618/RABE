@@ -9,11 +9,11 @@
 - pyparsing
 
 ## 文件说明
-FABEO.py ：基础分段式CP-ABE，包括Setup/KeyGen/Encrypt/Decrypt
-Rabe.py ：可撤销ABE，包括用户撤销树、时间策略、密钥更新
-Msp.py ：LSSS访问结构
-policytree.py ：策略解析
-secretutil.py ：密钥工具
+-FABEO.py ：基础分段式CP-ABE，包括Setup/KeyGen/Encrypt/Decrypt
+-Rabe.py ：可撤销ABE，包括用户撤销树、时间策略、密钥更新
+-Msp.py ：LSSS访问结构
+-policytree.py ：策略解析
+-secretutil.py ：密钥工具
 
 ## 测试
 python3 Rabe.py
