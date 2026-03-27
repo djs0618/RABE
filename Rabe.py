@@ -5,7 +5,7 @@ import sys
 from charm.toolbox.pairinggroup import PairingGroup, ZR, G1, G2, GT, pair
 from charm.toolbox.ABEnc import ABEnc
 from Msp import MSP
-from FABEO import FABECPABE  # 导入你已实现的分段式方案
+from FABEO import FABECPABE 
 import math
 import hashlib
 
@@ -130,7 +130,7 @@ class BinaryTree:
 
 
 class TimePolicyManager:
-    """时间策略管理类，处理时间属性转换（基于论文方法）"""
+    """时间策略管理类，处理时间属性转换"""
 
     def __init__(self, time_depth):
         self.time_depth = time_depth
@@ -171,7 +171,6 @@ class TimePolicyManager:
         attributes = set()
         for i, char in enumerate(node_str):
             if char == '0':
-                # 修复：将 W 改为 ω，与 create_time_policy_for_node 一致
                 attributes.add(f"W{i + 1}0")
             elif char == '1':
                 attributes.add(f"W{i + 1}1")
@@ -438,7 +437,7 @@ class RevocableABE:
         return str(plaintext)
 
 
-# 在Python脚本的main函数中添加更详细的错误处理
+# 在Python脚本的main函数中添加详细的错误处理
 def main():
     parser = argparse.ArgumentParser(description='Revocable ABE Test')
     parser.add_argument('--message', type=str, required=True, help='Message to encrypt')
